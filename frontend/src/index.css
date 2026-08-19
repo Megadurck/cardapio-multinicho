@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply m-0 min-h-screen bg-[radial-gradient(circle_at_12%_10%,#b9dce6_0%,transparent_30%),radial-gradient(circle_at_90%_10%,#a9ddd5_0%,transparent_24%),linear-gradient(135deg,#f2fbfc_0%,#dceff2_42%,#cfe7e6_100%)] font-body text-brand-900;
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+::selection {
+  background: rgba(8, 127, 115, 0.2);
+}
+
+body[data-theme='burger'] {
+  background: radial-gradient(circle at 12% 10%, #ffd68a 0%, transparent 30%), radial-gradient(circle at 90% 10%, #ffddb1 0%, transparent 24%), linear-gradient(135deg, #fffaf0 0%, #f9edd0 38%, #f6e6bf 100%);
+}
+
+body[data-theme='burger'] .bg-brand-900 { background-color: #7c2d12; }
+body[data-theme='burger'] .bg-brand-50 { background-color: #fff7ed; }
+body[data-theme='burger'] .bg-amber-50 { background-color: rgb(255 247 237 / 0.92); }
+body[data-theme='burger'] .bg-amber-50\/70 { background-color: rgb(255 255 255 / 0.7); }
+body[data-theme='burger'] .bg-amber-100\/70 { background-color: rgb(255 237 213 / 0.7); }
+body[data-theme='burger'] .bg-amber-200 { background-color: #fed7aa; }
+body[data-theme='burger'] .bg-amber-200\/80 { background-color: rgb(254 215 170 / 0.8); }
+body[data-theme='burger'] .border-amber-200 { border-color: #fed7aa; }
+body[data-theme='burger'] .border-amber-300 { border-color: #fdba74; }
+body[data-theme='burger'] .text-brand-900 { color: #7c2d12; }
+body[data-theme='burger'] .text-brand-700 { color: #c2410c; }
+body[data-theme='burger'] .text-orange-200 { color: #fed7aa; }
+body[data-theme='burger'] .bg-brand-500 { background-color: #f97316; }
+body[data-theme='burger'] .border-brand-200 { border-color: #fed7aa; }
+body[data-theme='burger'] .border-brand-300 { border-color: #fdba74; }
+body[data-theme='burger'] .from-brand-500 { --tw-gradient-from: #f97316 var(--tw-gradient-from-position); --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position); }
+body[data-theme='burger'] .via-brand-700 { --tw-gradient-to: rgb(194 65 12 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), #c2410c var(--tw-gradient-via-position), var(--tw-gradient-to); }
+body[data-theme='burger'] .to-brand-100 { --tw-gradient-to: #ffedd5 var(--tw-gradient-to-position); }
+body[data-theme='burger'] .to-orange-400 { --tw-gradient-to: #fb923c var(--tw-gradient-to-position); }
+body[data-theme='burger'] .to-orange-500 { --tw-gradient-to: #f97316 var(--tw-gradient-to-position); }
+
+@layer utilities {
+  .bg-amber-50 { background-color: rgb(239 249 250 / 0.92); }
+  .bg-amber-50\/70 { background-color: rgb(239 249 250 / 0.7); }
+  .bg-amber-100\/70 { background-color: rgb(207 229 237 / 0.7); }
+  .bg-amber-200 { background-color: #a8cfdb; }
+  .bg-amber-200\/80 { background-color: rgb(168 207 219 / 0.8); }
+  .border-amber-200 { border-color: #a8cfdb; }
+  .border-amber-300 { border-color: #76b2c2; }
+  .bg-orange-50 { background-color: #e5f4f1; }
+  .bg-orange-100 { background-color: #c9e8e2; }
+  .bg-orange-200\/60 { background-color: rgb(139 207 195 / 0.6); }
+  .text-orange-200 { color: #a8e0d5; }
+  .from-orange-400 { --tw-gradient-from: #087f73 var(--tw-gradient-from-position); --tw-gradient-to: rgb(8 127 115 / 0) var(--tw-gradient-to-position); }
+  .to-orange-400 { --tw-gradient-to: #087f73 var(--tw-gradient-to-position); }
+  .to-orange-500 { --tw-gradient-to: #087f73 var(--tw-gradient-to-position); }
+  .shadow-orange-200 { --tw-shadow-color: rgb(8 127 115 / 0.22); }
+}
