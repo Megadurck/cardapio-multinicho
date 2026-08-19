@@ -30,6 +30,13 @@ A mesma base pode ser adaptada para hamburguerias, creperias, restaurantes, espe
 
 > **Nota de autoria e desenvolvimento:** este projeto foi idealizado e estruturado por **Megadurck**, com apoio de ferramentas de Inteligencia Artificial durante o desenvolvimento. A proposta do produto, a organizacao da solucao, as decisoes de negocio e o direcionamento do projeto foram pensados pelo autor. O repositorio nao pretende apresentar o trabalho como se tivesse sido criado integralmente por um desenvolvedor humano do zero.
 
+## Visao do produto
+
+### Homepage da hamburgueria
+
+![Homepage do perfil Durck-Burgues](docs/screenshots/homepage-hamburgueria.png)
+
+A interface usa o mesmo layout para todos os nichos. O perfil ativo altera a marca, o catalogo, os textos e o tema visual sem duplicar a aplicacao.
 ## Demonstração atual
 
 O repositorio possui dois perfis configurados:
@@ -125,10 +132,6 @@ cardapio-multinicho/
 
 ## Requisitos
 
-- Node.js 20 ou superior.
-- npm 10 ou superior.
-- Internet ativa para usar o WhatsApp Web.
-- Um celular com WhatsApp para escanear o QR Code quando necessario.
 
 ## Como executar
 
@@ -194,8 +197,6 @@ npm run dev
 
 Acesse:
 
-- Frontend: `http://localhost:5173`
-- Backend: `http://localhost:3001`
 
 Se a porta estiver ocupada, o Vite pode iniciar em outra porta, como `5174` ou `5175`.
 
@@ -329,28 +330,12 @@ A sessao local e armazenada pelo `LocalAuth`. Para detalhes de operacao e troubl
 
 Arquivos locais de ambiente nunca devem ser enviados ao repositorio:
 
-- `backend/.env`
-- `frontend/.env`
-- qualquer arquivo `.env.*`, exceto `.env.example`
 
 Tambem sao ignorados:
 
-- `node_modules/`;
-- `dist/`;
-- `.wwebjs_auth/`;
-- `.wwebjs_cache/`;
-- `graphify-out/`;
-- ambientes virtuais Python;
-- logs e configuracoes locais do editor.
 
 Nunca coloque no GitHub:
 
-- tokens do WhatsApp;
-- chaves Pix reais;
-- senhas;
-- tokens de verificacao;
-- sessoes autenticadas;
-- dados reais de clientes.
 
 Se uma credencial real ja tiver sido publicada, revogue e gere outra imediatamente. O `.env.example` deve conter somente valores ficticios.
 
@@ -358,16 +343,6 @@ Se uma credencial real ja tiver sido publicada, revogue e gere outra imediatamen
 
 Este repositorio representa uma **MVP funcional para demonstracao e customizacao comercial**. Antes de uma operacao real em producao, recomenda-se adicionar:
 
-- banco de dados;
-- autenticacao e autorizacao;
-- validacao mais rigorosa dos dados;
-- logs estruturados;
-- monitoramento;
-- tratamento de falhas do WhatsApp;
-- deploy separado de frontend e backend;
-- gerenciamento seguro de segredos;
-- testes automatizados;
-- politica de privacidade e termos de uso.
 
 ## Licenca
 
