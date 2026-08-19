@@ -28,7 +28,7 @@ A ideia e manter uma estrutura unica de sistema e adaptar apenas o que muda entr
 
 A mesma base pode ser adaptada para hamburguerias, creperias, restaurantes, espetinhos, sorveterias, lanchonetes e outros nichos.
 
-> **Nota de autoria e desenvolvimento:** este projeto foi idealizado e estruturado por **Megadurck**, com apoio de ferramentas de Inteligencia Artificial durante o desenvolvimento. A proposta do produto, a organizacao da solucao, as decisoes de negocio e o direcionamento do projeto foram pensados pelo autor. O repositorio nao pretende apresentar o trabalho como se tivesse sido criado integralmente por um desenvolvedor humano do zero.
+> **Nota de autoria e desenvolvimento:** este projeto foi idealizado e estruturado por **Megadurck**, com o apoio de ferramentas de Inteligência Artificial durante o desenvolvimento. A proposta do produto, a organização da solução, as decisões de negócio e o direcionamento do projeto foram definidos pelo autor. Esta documentação deixa claro que o projeto não foi desenvolvido integralmente por um desenvolvedor humano sem o auxílio de ferramentas de IA.
 
 ## Visao do produto
 
