@@ -320,7 +320,20 @@ export default function App() {
         <div className="grid gap-5 md:grid-cols-3">
           {featuredItems.map((item) => (
             <article key={item.id} className="overflow-hidden rounded-3xl border border-amber-200 bg-white/80 shadow-soft">
-              <div className="h-28 bg-gradient-to-br from-amber-200 via-orange-100 to-brand-100" />
+              <div className="h-40 overflow-hidden bg-gradient-to-br from-amber-200 via-orange-100 to-brand-100">
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="menu-card-image"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center text-xl font-black uppercase tracking-[0.12em] text-brand-700">
+                    {item.name.slice(0, 2)}
+                  </div>
+                )}
+              </div>
               <div className="p-5">
                 <p className="text-xs font-bold uppercase tracking-[0.12em] text-brand-700">{item.categoryName}</p>
                 <h3 className="mt-2 font-display text-xl font-bold text-brand-900">{item.name}</h3>

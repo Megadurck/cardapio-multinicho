@@ -3,9 +3,9 @@ const hamburgerCategories = [
     id: 'lanches',
     name: 'Lanches',
     items: [
-      { id: 'x-burguer', name: 'X-Burguer', price: 18.9 },
-      { id: 'x-salada', name: 'X-Salada', price: 20.9 },
-      { id: 'x-bacon', name: 'X-Bacon', price: 23.9 }
+      { id: 'x-burguer', name: 'X-Burguer', price: 18.9, image: '/assets/xburger.jpeg' },
+      { id: 'x-salada', name: 'X-Salada', price: 20.9, image: '/assets/xsalada.jpg' },
+      { id: 'x-bacon', name: 'X-Bacon', price: 23.9, image: '/assets/xbacon.jpg' }
     ]
   },
   {
