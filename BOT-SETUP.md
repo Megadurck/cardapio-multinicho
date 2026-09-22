@@ -14,7 +14,7 @@ Guia completo para deixar o bot respondendo no WhatsApp, rodando localmente no s
 1. Copie `backend/.env.example` para `backend/.env`:
 
 ```bash
-copy backend\.env.example backend\.env
+cp backend/.env.example backend/.env
 ```
 
 2. Preencha no `backend/.env`:
@@ -33,12 +33,17 @@ STORE_WHATSAPP_NUMBER=5511999999999
 
 Apenas inicia o backend com o cliente do WhatsApp Web.
 
+**Linux/macOS:**
+```bash
+./start-bot-auto.sh
+```
+
 **Windows:**
-- Clique duplo em `start-bot.bat`
+- Clique duplo em `start-bot-auto.bat`
 
 **PowerShell:**
 ```bash
-.\start-bot.ps1
+.\start-bot-auto.ps1
 ```
 
 ### Opção C: Comando manual
@@ -77,7 +82,7 @@ Quando conectar, o backend exibira mensagem de pronto.
 
 1. **Copie** `backend/.env.example` → `backend/.env`
 2. **Preencha** as variáveis (sessao, pix, numero da loja)
-3. **Clique duplo** em `start-bot.bat`
+3. **Inicie** com `./start-bot-auto.sh` no Linux/macOS ou `start-bot-auto.bat` no Windows
 4. **Escaneie** o QR Code no terminal
 5. **Pronto!** Bot respondendo no WhatsApp
 

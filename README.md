@@ -132,6 +132,11 @@ cardapio-multinicho/
 
 ## Requisitos
 
+- Node.js 20 ou superior
+- npm 10 ou superior
+- Internet ativa para o WhatsApp Web
+- WhatsApp no celular para escanear o QR Code do bot
+
 
 ## Como executar
 
@@ -146,6 +151,12 @@ npm install
 ### 2. Configurar o backend
 
 Crie o arquivo local de ambiente a partir do exemplo.
+
+No Linux/macOS:
+
+```bash
+cp backend/.env.example backend/.env
+```
 
 No Windows PowerShell:
 
@@ -178,6 +189,14 @@ WEB_MENU_URL=http://localhost:5173
 
 ### 3. Configurar o frontend
 
+No Linux/macOS:
+
+```bash
+cp frontend/.env.example frontend/.env
+```
+
+No Windows PowerShell:
+
 ```powershell
 Copy-Item frontend\.env.example frontend\.env
 ```
@@ -195,7 +214,8 @@ VITE_STORE_WHATSAPP_NUMBER=5511999999999
 npm run dev
 ```
 
-Acesse:
+Acesse o cardapio em http://localhost:5173.
+O backend fica disponivel em http://localhost:3001/health.
 
 
 Se a porta estiver ocupada, o Vite pode iniciar em outra porta, como `5174` ou `5175`.
@@ -218,6 +238,12 @@ Iniciar backend em modo normal:
 
 ```bash
 npm run start --workspace backend
+```
+
+Para iniciar apenas o bot no Linux/macOS:
+
+```bash
+./start-bot-auto.sh
 ```
 
 ## Como trocar o nicho
